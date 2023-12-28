@@ -1,0 +1,24 @@
+/*one_page_website.css*/
+
+body {
+    background-color: #ffe0e6;
+    font-family: Arial;
+    font-size: 2em;
+    color: darkslategray;
+}
+
+h1 {
+    color: mediumturquoise;
+    font-family: serif;
+}
+
+form input[type="text"] {
+    width: 25%;
+    margin: 8px;
+    border: 4px solid peachpuff;
+    border-radius: 5px;
+}
+
+img {
+    border-radius: 10px;
+}
