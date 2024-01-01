@@ -271,7 +271,7 @@ input[type=submit] {
 
 /* Hover effect for submit button */
 input[type=submit]:hover {
-  background-color: white; /* Turns the background of the submit button white when the user hovers over it */
+  background-color: gray; /* Turns the background of the submit button white when the user hovers over it */
   color: black; /* Turns the font black when hovered over */
   transform: scale(1.5); /* Makes the button increase 1.5 times in size */
   transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
