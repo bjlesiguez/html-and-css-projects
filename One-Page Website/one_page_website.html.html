@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Ben's Burger!</title>
-		<link rel="stylesheet" href="./CSS/one_page_website.css">
-	</head>
-	
-	
-	<h1>Ben's Burger!</h1>
+  <head>
+    <meta charset="UTF-8">
+    <title>Ben's Burger</title>
+    <link rel="stylesheet" type="text/css" href="CSS/main.css">
+    <script src="JS/main.js"></script>
+  </head>
+  <body>
+
+    <h1>Ben's Burger!</h1>
 	<h4>Affordilicious Burger!!!</h4>
-	<body>
+
 		
 		<!-- NAV -->
 		<div>
@@ -43,7 +44,7 @@
 					<div>
 						<div>
 							
-							<img src="./burger_pic/regularburger.png" alt="Regular Burger">
+							<img src="./Pic/regularburger.png" alt="Regular Burger">
 							<div>
 								<h3>Regular Burger - 350 kcal</h3>
 								<p>Best for the price!</p>
@@ -55,7 +56,7 @@
 					<!-- PHOTO CONTAINER 2 -->
 					<div>
 						<div>
-							<img src="./burger_pic/vegieburger.png" alt="Vegie Burger" widht="200" height="200">
+							<img src="./Pic/vegieburger.png" alt="Vegie Burger" widht="200" height="200">
 							<div>
 								<h3>Vegie Burger - 240 kcal</h3>
 								<p>The most affordable healthy burger!</p>
@@ -67,7 +68,7 @@
 					<!-- PHOTO CONTAINER 3 -->
 					<div>
 						<div>
-							<img src="./burger_pic/cheeseburger.png" alt="Cheese Burger">
+							<img src="./Pic/cheeseburger.png" alt="Cheese Burger">
 							<div>
 								<h3>Cheese Burger - 560 kcal</h3>
 								<p>Specialty of the house!</p>
@@ -77,6 +78,7 @@
 					<!-- END PHOTO-CONTAINER 3 -->
 					
 					<!-- END MENU -->	
+						
 					
 					<!-- VIDEO -->
 					
@@ -113,4 +115,71 @@
 		www.ben'sburger.com &nbsp;|&nbsp; 403-8888-777 &nbsp;| &copy; 2023
 	</div>
 	<!-- END FOOTER -->
-	
+
+      <h2 style="text-align:left">Lightbox</h2>
+      
+      <div class="row">
+        <div class="column">
+          <img src="./Pic/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./Pic/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./Pic/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="./Pic/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+      </div>
+      
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img src="./Pic/wide1.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img src="./Pic/wide2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img src="./Pic/wide3.jpg" style="width:100%">
+          </div>
+          
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img src="./Pic/wide4.jpg" style="width:100%">
+          </div>
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+      
+      
+          <div class="column">
+            <img class="demo cursor" src="./Pic/wide1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Pic/wide2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Pic/wide3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="./Pic/wide4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+        </div>
+      </div>
+
+  </body>
+
+</html>
